@@ -22,7 +22,6 @@
             </metadata>
 
             <manifest>
-                <!--<item id="toc" media-type="application/xhtml+xml" href="toc.html"/>-->
                 <xsl:for-each select="chapter">
                     <xsl:for-each select="section[not(@src=preceding-sibling::section/@src)]">
                         <xsl:call-template name="gen-item" />
@@ -45,10 +44,6 @@
                     </xsl:for-each>
                 </xsl:for-each>
             </spine>
-
-            <!--<guide>-->
-                <!--<reference type="toc" title="Table of Contents" href="toc.html"/>-->
-            <!--</guide>-->
         </package>
     </xsl:template>
 

@@ -1,5 +1,6 @@
-*.html
 *.xml
 vim-help.opf
 
-.tmp/
+/.tmp/
+/test/
+/.idea/
